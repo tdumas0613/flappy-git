@@ -30,8 +30,14 @@ GameWindow {
     // the "logical size" - the scene content is auto-scaled to match the GameWindow size
     width: 320
     height: 480
-    
-    
+
+    //generates player sprite within scene
+    //player defined in player.qml
+    Player {
+      id: player
+      x: 160
+      y: 180
+    }
     
   }
 }

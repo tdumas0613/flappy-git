@@ -26,6 +26,9 @@ int main(int argc, char *argv[])
   // also see the .pro file for more details
   //  vplay.setMainQmlFileName(QStringLiteral("qrc:/qml/main.qml"));
 
+  // disables the file selection for different device resolutions
+  vplay.setContentScaleAndFileSelectors(1);
+
   engine.load(QUrl(vplay.mainQmlFileName()));
 
   return app.exec();
