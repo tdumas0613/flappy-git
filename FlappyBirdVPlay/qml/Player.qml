@@ -6,15 +6,21 @@ EntityBase {
   entityType: "player"
 
   SpriteSequenceVPlay {
-    id: bird
+    id: boy
     anchors.centerIn: parent
 
     SpriteVPlay {
-      frameCount: 3
-      frameRate: 10
-      frameWidth: 34
-      frameHeight: 24
-      source: "../assets/bird.png"
+      frameCount: 2
+      frameRate: 5
+      frameWidth: 95
+      frameHeight: 95
+      source: "../assets/player.png"
     }
+
+    CircleCollider {
+       id: collider
+       radius: 13
+     }
+
   }
 }

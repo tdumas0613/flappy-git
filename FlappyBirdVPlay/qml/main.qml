@@ -31,6 +31,21 @@ GameWindow {
     width: 320
     height: 480
 
+    PhysicsWorld {
+      debugDrawVisible: true // set this to false to hide the physics overlay
+      gravity.y: -27
+    }
+
+
+    Image{
+        id: background
+        source: "../assets/background.png"
+    }
+
+    Ground {
+      anchors.bottom: scene.bottom
+    }
+
     //generates player sprite within scene
     //player defined in player.qml
     Player {
@@ -39,6 +54,8 @@ GameWindow {
       y: 180
     }
     
+
+
   }
 }
 
