@@ -31,9 +31,16 @@ GameWindow {
     width: 320
     height: 480
 
+    MouseArea {
+      anchors.fill: scene.gameWindowAnchorItem
+      onPressed: {
+        player.push()
+      }
+
+    }
     PhysicsWorld {
       debugDrawVisible: true // set this to false to hide the physics overlay
-      gravity.y: -27
+      gravity.y: 0 //gravity set to 0
     }
 
 
@@ -51,9 +58,9 @@ GameWindow {
     Player {
       id: player
       x: 160
-      y: 180
+      y: 350
     }
-    
+
 
 
   }
