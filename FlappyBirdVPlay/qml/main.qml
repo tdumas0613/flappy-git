@@ -40,13 +40,13 @@ GameWindow {
     }
     PhysicsWorld {
       debugDrawVisible: true // set this to false to hide the physics overlay
-      gravity.y: 0 //gravity set to 0
+      gravity.y: 9.81 //gravity set to 0
     }
 
 
     Image{
         id: background
-        source: "../assets/background.png"
+        source: "../assets/newbg.png"
     }
 
     Ground {
@@ -57,11 +57,15 @@ GameWindow {
     //player defined in player.qml
     Player {
       id: player
-      x: 160
+      x: 175
       y: 350
     }
 
-
+    Cyborg{
+        id: cyborg
+        x:70
+        y:350
+    }
 
   }
 }

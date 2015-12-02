@@ -57,13 +57,13 @@ GameWindow {
     //player defined in player.qml
     Player {
       id: player
-      x: 175
+      x: 165
       y: 350
     }
 
     Cyborg{
         id: cyborg
-        x:70
+        x:50
         y:350
     }
 
